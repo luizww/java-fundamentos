@@ -1,13 +1,12 @@
 # Fundamentos e Projetos em Java
 
 ![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?logo=openjdk&logoColor=white)
-![Tests](https://img.shields.io/badge/testes-4%20cenários-2EA44F)
 ![Status](https://img.shields.io/badge/status-em%20evolução-6C63FF)
 
 Coleção de exercícios e projetos desenvolvidos durante meus estudos de Java.
 Os exemplos praticam entrada de dados, operadores, condicionais, repetições,
-`switch` e orientação a objetos. O repositório também inclui um sistema
-bancário de terminal com regras de negócio e testes automatizados simples.
+`switch` e orientação a objetos. O repositório também inclui uma versão inicial
+de um sistema bancário de terminal criada durante meus estudos de POO.
 
 ## Exercícios disponíveis
 
@@ -28,20 +27,15 @@ bancário de terminal com regras de negócio e testes automatizados simples.
 O projeto localizado em `projetos/sistema-bancario` simula operações básicas
 de uma conta bancária:
 
-- Consulta de saldo e limite disponível;
+- Consulta de saldo e cheque especial;
 - Depósitos, saques e pagamento de boletos;
-- Uso de cheque especial;
-- Cobrança de taxa sobre o valor utilizado;
-- Validação de valores e saldo disponível;
-- Quatro cenários de teste executados com `assert`.
+- Liberação do cheque especial após o primeiro depósito;
+- Menu interativo executado no terminal;
+- Uso de atributos privados, getters, setters e métodos.
 
-### Regras do cheque especial
-
-- Depósito inicial de até R$ 500: limite de R$ 50;
-- Depósito inicial acima de R$ 500: limite de 50% do depósito;
-- Operações podem utilizar o saldo e o limite disponível;
-- O uso do cheque gera uma taxa de 20% sobre o valor utilizado;
-- A taxa pendente é descontada quando o saldo é recomposto.
+O código foi mantido próximo da versão que escrevi durante o aprendizado. Ele
+representa meus primeiros passos com encapsulamento e ainda possui regras
+simplificadas, como permitir que saques deixem o saldo negativo.
 
 ## Como executar
 
@@ -57,18 +51,9 @@ Troque `Tabuada` pelo nome da classe que deseja executar.
 ### Executar o sistema bancário
 
 ```bash
-javac -d out projetos/sistema-bancario/src/*.java
-java -cp out Banco
+javac -d out projetos/sistema-bancario/src/exercicios/*.java
+java -cp out exercicios.Banco
 ```
-
-### Executar os testes do sistema bancário
-
-```bash
-javac -d out projetos/sistema-bancario/src/*.java projetos/sistema-bancario/tests/*.java
-java -ea -cp out ContaBancariaTest
-```
-
-O parâmetro `-ea` habilita as verificações feitas com `assert`.
 
 ## Organização
 
@@ -77,11 +62,10 @@ java-fundamentos/
 ├── src/                         # 13 exercícios independentes
 └── projetos/
     └── sistema-bancario/
-        ├── src/
-        │   ├── Banco.java
-        │   └── ContaBancaria.java
-        └── tests/
-            └── ContaBancariaTest.java
+        └── src/
+            └── exercicios/
+                ├── Banco.java
+                └── Conta_bancaria.java
 ```
 
 Em `src`, cada classe com método `main` representa um exercício independente.
@@ -90,7 +74,7 @@ Em `src`, cada classe com método `main` representa um exercício independente.
 ## Objetivo
 
 Registrar minha evolução na linguagem Java, partindo de exercícios pequenos e
-avançando para projetos com regras de negócio, organização e testes.
+avançando gradualmente para projetos com classes e encapsulamento.
 
 ## Autor
 
