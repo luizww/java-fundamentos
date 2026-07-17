@@ -1,7 +1,17 @@
-# Fundamentos e Projetos em Java
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" width="78" alt="Java">
+</p>
 
-![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?logo=openjdk&logoColor=white)
-![Status](https://img.shields.io/badge/status-em%20evolução-6C63FF)
+<h1 align="center">Fundamentos e Projetos em Java</h1>
+
+<p align="center">
+  Exercícios que acompanham meus estudos de lógica e orientação a objetos.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17%2B-ED8B00?logo=openjdk&logoColor=white" alt="Java 17+">
+  <img src="https://img.shields.io/badge/status-em%20evolução-6C63FF" alt="Em evolução">
+</p>
 
 Coleção de exercícios e projetos desenvolvidos durante meus estudos de Java.
 Os exemplos praticam entrada de dados, operadores, condicionais, repetições,
